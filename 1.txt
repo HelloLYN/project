@@ -39,3 +39,6 @@ git merge [branceName] 合并分支
 要先提交然后才有分支的概念
 git不会上传空文件夹
 版本区->GitHub
+
+git remote -v 查看关联
+git remote rm [name] 删除关联
