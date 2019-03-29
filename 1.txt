@@ -1,8 +1,8 @@
 GIT的一些命令
 
 git config --list 查看当前git的配置
-git config --global user.name [YourName]
-git config --global user.email [YourEmail]
+git config <--global> user.name [YourName]
+git config <--global> user.email [YourEmail]
 git init git文件初始化(告诉哪个文件夹被git管理) 
 rm -rf .git 删除这个git(慎用)
 ! 强制退出
@@ -58,4 +58,6 @@ git checkout -b gh-pages
 fork  在当前项目下克隆一份到你的项目中,如果代码更新,不会随之更新
 git clone xxx [theNameYouWant]克隆项目,更改名字
 git remote -v 查看当前文件夹的所属者
-fjdfd
+git remote rm origin 删除仓库关联
+
+settings->collaborators 添加贡献者,被添加的人相当于root权限
