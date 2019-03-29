@@ -43,3 +43,4 @@ git不会上传空文件夹
 git remote -v 查看关联
 git remote rm [name] 删除关联
 
+git pull origin master  从远程仓库拉取下来
