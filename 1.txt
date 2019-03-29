@@ -44,4 +44,18 @@ git remote -v 查看关联
 git remote rm [name] 删除关联
 
 git pull origin master  从远程仓库拉取下来
+git push origin master  提交到远程仓库
 
+git checkout -b gh-pages  
+  这个命令将会创建一个gh-pages分支,用来发布我们的静态页面
+  将分支提交到远程仓库,->settings github-pages
+  git checkout -b -gh-pages
+  touch index.html
+  git add .
+  git commit -m 'message'
+  git push origin gh-pages
+
+fork  在当前项目下克隆一份到你的项目中,如果代码更新,不会随之更新
+git clone xxx [theNameYouWant]克隆项目,更改名字
+git remote -v 查看当前文件夹的所属者
+fjdfd
