@@ -1,0 +1,41 @@
+GIT的一些命令
+
+git config --list 查看当前git的配置
+git config --global user.name [YourName]
+git config --global user.email [YourEmail]
+git init git文件初始化(告诉哪个文件夹被git管理) 
+rm -rf .git 删除这个git(慎用)
+! 强制退出
+
+git status
+git add [filename]/git add .(提交全部) /git add -A(提交全部)
+
+git commit -m "[message]"
+
+工作区(红色)->暂存区/过渡区(绿色)->历史区/版本区(没用颜色)
+
+
+git diff  工作区和暂存区的对比
+git diff master 工作区和版本库的对比
+git diff --cached 暂存区和版本库的对比
+
+撤销
+git checkout [filename] 从暂存区将工作区覆盖(回撤,但是已经用git commit命令的无效)
+git reset HEAD  回到上一次暂存区
+git rm --cached [filename](回退到工作区)
+git reset --hard 版本号 回滚历史版本号(这个回滚了三个区都会相同)
+git reflog  查看所有的版本
+
+git branch  查看分支
+git branch [name] 创建分支
+git checkout [name] 切换分支
+git branch -D [name] 删除分支
+
+
+git merge [branceName] 合并分支
+
+
+
+要先提交然后才有分支的概念
+git不会上传空文件夹
+版本区->GitHub
