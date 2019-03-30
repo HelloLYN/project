@@ -61,3 +61,6 @@ git remote -v 查看当前文件夹的所属者
 git remote rm origin 删除仓库关联
 
 settings->collaborators 添加贡献者,被添加的人相当于root权限
+
+
+git push -u  -origin master -f 强制推送更新远程服务器
